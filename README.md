@@ -30,7 +30,7 @@ These are the questions in order:
 
 More questions can be added between Q3 and Q4.
 
-## Create a form and use the script!
+## Create a form and use the script
 Now we come to the fun part! 
 ### Clone your template form
 Take your template form, clone it and change the name and description to something relevant. Also add any extra questions you need.
@@ -40,6 +40,9 @@ Press the "Responses"-tab in your cloned form and press Link to Sheets -> Select
 ### Done
 The form respondants should now get emails from the script!
 A log can be found in the Executions tab of App Script.
+
+## Prepare for ticketsale function
+The script will add a button called "Infochef" in the Sheet menu. When pressed, it gives the option to prepare for sale and the option to reset from it. The prepare for sale checks all emails and if they are present in column A in "Mottagningsavgift" sheet their rows will be marked orange. This is to make it easier to handle discounts. It also hides irrelevant rows and sets a column heading to "Paid" and adds counters to the last cell in that row to make it easier to keep track on how many tickets are left. The reset button only unhides the hidden columns.
 
 ## Known bugs and limitations
 Due to the code being sent by a script it will get caught in some spam-filters.
